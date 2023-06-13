@@ -1,0 +1,19 @@
+html {
+    font-size: 62,5%;
+}
+
+body {
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img {
+    width: 8%;
+    height: 8%;
+    margin: 1rem 3rem;
+}
+
+h1.titulo-pagina {
+    font-size: 2rem;
+}
