@@ -3,6 +3,7 @@
 
 html {
     font-size: 62,5%;
+    overflow-x: hidden;
 }
 
 :root {
@@ -11,6 +12,7 @@ html {
     --fonte-principal: 'Montserrat'
 }
 
+/* Seção inicio */
 .inicio {
     background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
@@ -47,6 +49,7 @@ h3 {
     font-weight: 700;
 }
 
+/* Seção conteudo */
 .conteudo {
     background-color: var(--black);
 }
@@ -77,4 +80,53 @@ h3 {
     color:var(--white);
     text-align: center;
     margin: 0 2rem 0 2rem;
+}
+
+/* Seção escopo */
+.escopo {
+    background-color: var(--black);
+}
+
+h2.titulo {
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 1.8rem;
+    padding: 2rem 1rem 0 1rem;
+}
+
+.accordion {
+    padding: 4rem;
+}
+
+.accordion-item {
+    font-family: var(--fonte-principal);
+}
+
+/* Seção contato */
+.contato {
+    background-color: #ff8c00;
+}
+
+h2.titulo-contato {
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 2.2rem;
+    padding: 2rem 1rem 0 1rem;
+    text-align: center;
+}
+
+.contato p {
+    font-family: var(--fonte-principal);
+    font-size: 1.3rem;
+    padding: 1rem 5rem;
+    text-align: center;
+}
+
+h3.titulo-forms {
+    text-align:center;
+    padding: 2rem 9rem;
+    font-family: var(--fonte-principal);
+    font-size: 1.5rem;
+    font-weight: 700;
+
 }
