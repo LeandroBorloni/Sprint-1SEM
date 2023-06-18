@@ -14,10 +14,10 @@
 <body>
     <nav class="navbar bg-black">
         <div class="container-fluid">
-            <img src="./assets/images/logo-fiap.svg" alt="Logo da FIAP">
+            <img class="slide-in-bck-center" src="./assets/images/logo-fiap.svg" alt="Logo da FIAP">
             <h1 class="navbar-brand mb-0 text-white titulo-pagina"><strong class="text-warning">Omni</strong>Channel
             </h1>
-            <img src="./assets/images/logo-sanofi.png" alt="Logo da Sanofi">
+            <img class="slide-in-bck-center" src="./assets/images/logo-sanofi.png" alt="Logo da Sanofi">
         </div>
     </nav>
     <section class="inicio">
@@ -173,7 +173,7 @@
         </p>
         <h3 class="titulo-forms">Nos ajude nesta etapa e deixe seu comentário e/ou crítica preenchendo o formulário
             abaixo!</h3>
-        <form class="row g-3 mt-3 px-5 pb-5">
+        <form id="contato" class="row g-3 mt-3 px-5 pb-5" data-formulario>
             <div class="col-md-6 form-floating mb-3">
                 <input type="text" class="form-control" id="nomeInput" placeholder="Primeiro nome">
                 <label for="nomeInput">Nome</label>
@@ -210,20 +210,17 @@
                 <div class="col-lg-8 col-md-6 mb-2">
                     <h5 class="text-uppercase mb-2">Sobre o grupo</h5>
                     <p>
-                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                        voluptatum deleniti atque corrupti.
+                        Projeto sobre o Challenge da Sanofi
                     </p>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-2">
                     <h5 class="text-uppercase mb-2 pb-1">Contato</h5>
                     <ul class="fa-ul ms-2">
                         <li class="mb-3">
-                            <span class="fa-li"><i class="fas fa-envelope"></i></span><span
-                                class="ms-2">grupotcb@gmail.com</span>
+                            <span class="ms-2">grupotcb@gmail.com</span>
                         </li>
                         <li class="mb-3">
-                            <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 48 234 567
-                                88</span>
+                            <span class="ms-2">+55 11 4304-2012</span>
                         </li>
                     </ul>
                 </div>
@@ -239,6 +236,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

@@ -17,6 +17,8 @@ html {
     background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    height: 830px;
 }
 
 .navbar img {
@@ -24,6 +26,36 @@ html {
     height: 8%;
     margin: 1rem 3rem;
 }
+
+.slide-in-bck-center {
+	-webkit-animation: slide-in-bck-center 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bck-center 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in-bck-center {
+    0% {
+      -webkit-transform: translateZ(600px);
+              transform: translateZ(600px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-bck-center {
+    0% {
+      -webkit-transform: translateZ(600px);
+              transform: translateZ(600px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
 
 h1.titulo-pagina {
     font-size: 2rem;
@@ -41,7 +73,7 @@ h3 {
 .box {
     display: flex;
     justify-content: space-between;
-    margin: 12rem 1rem 0 1rem;
+    margin: 16rem 1rem 0 1rem;
 }
 
 .box p {
@@ -129,4 +161,48 @@ h3.titulo-forms {
     font-size: 1.5rem;
     font-weight: 700;
 
+}
+
+@media (max-width: 580px) {
+    .navbar img {
+        margin: 0;
+    }
+    
+    h3 {
+        font-size: 1.4rem;
+        padding: 2rem 3rem;
+    }
+
+    .box {
+        margin: 14rem 0.2rem 0 0.2rem;
+    }
+
+    .box p {
+        margin-right: 0.3rem;
+        font-size: 0.9rem;
+    }
+
+    .conteudo-texto {
+        display: inline;
+    }
+
+    .conteudo-texto p {
+        font-size: 1rem;
+        margin: 0 2rem 1rem 2rem;
+    }
+
+    .conteudo-texto img {
+        width: 70%;
+        margin: 0 1rem 1rem 4rem;
+    }
+
+    .contato p {
+        font-size: 0.9rem;
+        text-align: start;
+        padding: 1rem 3rem;
+    }
+
+    h3.titulo-forms {
+        padding: 1rem 3rem;
+    }
 }
